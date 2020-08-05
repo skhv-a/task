@@ -1,7 +1,34 @@
-import '../styles/globals.css'
+import '../styles/styles.css'
+import '../scss/spinner.scss'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import NextNProgress from 'nextjs-progressbar'
+
+export default function MyApp({Component, pageProps}) {
+  return (
+    <>
+      <NextNProgress
+        options={{
+          template: `
+          <div class="bar" role="bar"><div class="peg"></div></div>
+          <div class="spinner" role="spinner">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+          </div>
+          `,
+        }}
+      />
+
+      <Component {...pageProps} />
+    </>
+  )
 }
-
-export default MyApp

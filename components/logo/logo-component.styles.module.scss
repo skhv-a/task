@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+
+.logo {
+  height: $logoHeight;
+  display: flex;
+  align-items: center;
+
+  &__ico {
+    width: $width;
+    height: $logoHeight;
+    background: $mainGreen;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-family: 'GT Walsheim Pro CondensedThin';
+  }
+}
+
+.bold {
+  font-family: 'GT Walsheim Pro CondensedRegular';
+}

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro CondensedRegular';
+  src: url('../assets/fonts/GT-Walsheim-Pro/GTWalsheimPro-CondensedRegular.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro CondensedThin';
+  src: url('../assets/fonts/GT-Walsheim-Pro/GTWalsheimPro-CondensedThin.ttf')
+    format('truetype');
+}

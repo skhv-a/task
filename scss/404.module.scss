@@ -1,0 +1,15 @@
+.notFound {
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__icon {
+    margin: 40px 24px;
+  }
+  &__text {
+    font-size: 18px;
+  }
+}

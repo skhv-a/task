@@ -1,0 +1,21 @@
+@import 'variables';
+
+.main_layout {
+  min-width: 732px;
+  width: 732px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: $logoHeight;
+
+  & > :not(:last-child) {
+    margin-left: 37px;
+  }
+}
+
+.text {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
